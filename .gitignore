@@ -1,0 +1,19 @@
+# Build artifacts (rebuild them with the commands in README.md)
+*.zip
+backend/layer/python/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Never commit credentials or local AWS config
+.aws/
+*.pem
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/

@@ -1,0 +1,23 @@
+AWS Cloud Basics - Study Group Notes
+
+Regions and Availability Zones
+An AWS Region is a physical location in the world, such as us-east-1 (N. Virginia) or ap-south-1 (Mumbai).
+Each Region contains multiple Availability Zones (AZs). An AZ is one or more separate data centers with
+independent power and networking. Spreading resources across AZs improves availability.
+
+Shared Responsibility Model
+AWS is responsible for security "of" the cloud: physical data centers, hardware, and the global network.
+The customer is responsible for security "in" the cloud: their data, IAM users and permissions,
+and configuration such as keeping S3 buckets private.
+
+Core services
+- Amazon S3: object storage. Data is stored as objects inside buckets. Bucket names are globally unique.
+- AWS Lambda: serverless compute. You upload code and AWS runs it on demand; you pay per request and per millisecond of run time.
+- Amazon API Gateway: creates HTTP endpoints that can trigger Lambda functions.
+- AWS IAM: controls who can do what. Best practice is least privilege: grant only the permissions that are needed.
+- Amazon CloudWatch: collects logs and metrics so you can monitor and debug applications.
+
+IAM best practices
+1. Do not use the root user for everyday tasks; protect it with MFA.
+2. Create IAM users or roles for people, and IAM roles for applications.
+3. Never hard-code access keys in code. Applications such as Lambda should use an IAM execution role.
