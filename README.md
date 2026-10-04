@@ -49,7 +49,8 @@ teach and debug.
 │   ├── style.css                  Notebook theme, dark mode, mobile layout
 │   └── app.js                     Calls the API, renders answers and citations
 ├── docs/
-│   └── cleanup-checklist.md       How to delete every billable resource
+│   ├── cleanup-checklist.md       How to delete every billable resource
+│   └── workshop/                  4-session curriculum for a student builder group
 ├── sample-docs/                   Small example notes for testing
 └── plan.md                        The original project brief
 ```
